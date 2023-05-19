@@ -10,10 +10,12 @@ body {
 }
 
 .header1 {
+  width: 100vw;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("header1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("header1.jpg");
   padding: 20px;
   height: 400px;
 }
@@ -29,7 +31,8 @@ p {
 
 .header2 {
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("header2.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("header2.webp");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 50px;
@@ -40,7 +43,8 @@ p {
 
 .header3 {
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("header3.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("header3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -105,10 +109,11 @@ p {
   width: 100%;
   height: 600px;
   padding: 10px;
+  overflow: auto;
 }
 
 .kurz_nav {
-  width: 100%;
+  width: 100vw;
   padding: 30px;
   background-color: #171730;
 }
@@ -131,7 +136,8 @@ p {
   box-shadow: 5px 10px 8px 10px #000;
 }
 
-input[type=text], select {
+input[type="text"],
+select {
   width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -141,7 +147,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 100px;
   background-color: #484848;
   color: white;
@@ -153,20 +159,44 @@ input[type=submit] {
 }
 
 #climate-change {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) ), url("TAassets/climate.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+    url("TAassets/climate.webp");
   background-position: center;
+  font-size: 10vw;
 }
 #human-era {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) ), url("TAassets/human.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+    url("TAassets/human.jpeg");
   background-position: center;
+  font-size: 10vw;
 }
 #space {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) ), url("TAassets/space.png");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+    url("TAassets/space.png");
   background-position: center;
+  font-size: 10vw;
 }
 #biology {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) ), url("TAassets/biology.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+    url("TAassets/biology.jpeg");
   background-position: center;
+  font-size: 10vw;
+}
+
+#image-track .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  padding: 2vmin;
+  width: 90%;
+  overflow: auto;
+  margin: auto;
 }
 
 @media screen and (min-width: 1000px) {

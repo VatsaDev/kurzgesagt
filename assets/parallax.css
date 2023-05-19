@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+  color: #cac4c4;
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.section1,
+.section2 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.section1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),url("parallax/background.png") top center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.2);
+}
+.section1::after {
+  content: "";
+  width: 105%;
+  height: 105%;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),url("parallax/foreground.png") top center;
+  background-size: cover;
+  z-index: 0;
+}
+.section1 .text {
+  top: 10%;
+  transform: translateZ(-0.5px) scale(1.5, 1.6) translate(-33%, 10%);
+}
+.section2 {
+  background: #121212;
+}
+.title {
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  font-size: 15vw;
+  color: #cac4c4;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+  z-index: 1;
+}
+
+.subtitle {
+  top: 70%;
+  left: 50%;
+  position: absolute;
+  font-size: 7vw;
+  color: #cac4c4;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+  z-index: 1;
+}
+
+.card {
+  width: 100%;
+  background-color: #121212;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  box-shadow: 5px 10px 8px 10px #000;
+}
+
+input[type="text"],
+select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100px;
+  background-color: #484848;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+
+  .card {
+    width: 60%;
+  }
+}

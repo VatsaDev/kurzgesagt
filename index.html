@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kurzgesagt</title>
+  <link rel="stylesheet" href="assets/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
 </head>
 
@@ -29,22 +29,39 @@
   </header>
   <h2 style="font-size: 48px"><b>Science Education Since 12013</b></h2>
 
-  <div class="w3-content w3-display-container">
-    <img class="mySlides" src="assets/slides/1662004852857.jpeg" />
-    <img class="mySlides" src="assets/slides/E5N-hX_VIAAz5Qt.jpeg" />
-    <img class="mySlides" src="assets/slides/E6BwH9lXoAMIvaL.jpeg" />
-    <img class="mySlides" src="assets/slides/E6BwH9lXoAMIvaL.jpeg" />
-    <img class="mySlides" src="assets/slides/ExBLnJwWUAEGIMX.jpeg" />
-    <img class="mySlides" src="assets/slides/FRvqi5ZXMAEUla-.jpeg" />
-    <img class="mySlides" src="assets/slides/FWv0MoJXgAM2PMB.jpeg" />
-    <img class="mySlides" src="assets/slides/FZD36DWX0AAARs8.jpeg" />
-    <div class="w3-center w3-display-bottommiddle" style="width: 100%">
-      <span class="w3-left" onclick="plusDivs(-1)">&#10094;</span>
-      <span class="w3-right" onclick="plusDivs(1)">&#10095;</span>
-      <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
-      <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
-      <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
-    </div>
+  <div id="image-track">
+    <img src="assets/slides/1662004852857.jpeg" class="image" draggable="false">
+    <img src="assets/slides/E5N-hX_VIAAz5Qt.jpeg" class="image" draggable="false">
+    <img src="assets/slides/E6BwH9lXoAMIvaL.jpeg" class="image" draggable="false">
+    <img src="assets/slides/ExBLnJwWUAEGIMX.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FePZEF6XoAA7eOt.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FfW2NtFWQAELZUT.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FgfKdWnXkAIk-r6.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FgZpmEyWQAA5oAP.jpeg" class="image" draggable="false">
+    <img src="assets/slides/Fi1GDb1WABQZIbM.jpeg" class="image" draggable="false">
+    <img src="assets/slides/Fi1GZmHWABMvp1J.png" class="image" draggable="false">
+    <img src="assets/slides/Fi1IA5OXgAA81BT.png" class="image" draggable="false">
+    <img src="assets/slides/Fi1IUHlWIAESgDi.png" class="image" draggable="false">
+    <img src="assets/slides/FiLZHT8XoAg-ftG.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FjoACHDWIAE-kOd.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FjtNBnIWAAAya5v.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FkC7g2gWYBgXQIS.jpeg" class="image" draggable="false">
+    <img src="assets/slides/Fl9nSGEWYAE-VAG.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FmCfyYNWAAAQZrR.jpeg" class="image" draggable="false">
+    <img src="assets/slides/Fn48iwrWIAELLQq.jpeg" class="image" draggable="false">
+    <img src="assets/slides/Fn94xo9agAIFcZT.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FoR3lk0WcAAmMES.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FpVbbusXgAI8a0K.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FqI7uSUWIAs0l_9.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FrMTV1kXwAADDfm.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FrQ0ux6WIAAnEaC.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FRvqi5ZXMAEUla-.jpeg" class="image" draggable="false">
+    <img src="assets/slides/Fsn7WzZXwAEhwtw.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FtcZLcGWIAERlgh.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FvCbAjBXsAECN3P.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FvXBYVUWYAAzuvB.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FWv0MoJXgAM2PMB.jpeg" class="image" draggable="false">
+    <img src="assets/slides/FZD36DWX0AAARs8.jpeg" class="image" draggable="false">
   </div>
 
   <header class="header3">
@@ -63,7 +80,7 @@
       <h1 style="font-size: 100px;">Space and Tech</h1>
     </div>
     <div id="biology" class="ta-column">
-      <h1 style="font-size: 100px;">Chemistry and Biology</h1>
+      <h1 style="font-size: 100px;">Biology and life</h1>
     </div>
   </div>
   <p>© 2023 - present by Vatsadev, graphics and videos from Kurzgesagt</p>
